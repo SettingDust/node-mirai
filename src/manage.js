@@ -56,7 +56,7 @@ const getManager = async ({
   authKey,
   qq,
 }) => {
-  const { data } = await axios.get(`${host}/manager?authKey=${authKey}&qq=${qq}`);
+  const { data } = await axios.get(`${host}/managers?authKey=${authKey}&qq=${qq}`);
   return data;
 };
 
